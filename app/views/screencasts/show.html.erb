@@ -1,0 +1,21 @@
+<div class="extra-padding-top"></div>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @screencast.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @screencast.body %>
+</p>
+
+<video width="940" height="450" controls>
+  <source src="<%= @screencast.episode %>" type="video/mp4">
+  Your browser does not support the video tag... please upgrade your browser
+</video>
+
+<%= link_to 'download', download_screencast_path(@screencast) %>
+<%= link_to 'Edit', edit_screencast_path(@screencast) %> |
+<%= link_to 'Back', screencasts_path %>

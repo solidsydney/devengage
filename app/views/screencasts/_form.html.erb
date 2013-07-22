@@ -1,0 +1,29 @@
+<%= form_for(@screencast, :html => {:multipart => true }) do |f| %>
+  <% if @screencast.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@screencast.errors.count, "error") %> prohibited this screencast from being saved:</h2>
+
+      <ul>
+      <% @screencast.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </div>
+    <div class="field">
+      <%= f.label :upload_video %><br />
+      <%= f.file_field :episode %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

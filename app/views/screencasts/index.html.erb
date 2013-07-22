@@ -1,0 +1,19 @@
+<header class="jumbotron subhead" id="overview" style = "margin-bottom: 20px;">
+  <div class="container">
+    <h1>enGUAGE SCREENCAST</h1>
+    <p class="lead">Watch screencasts online or download for offline studies.</p>
+  </div>
+</header>
+
+    <% @screencasts.each do |screencast| %>
+        <div class="span12 screencast-div">
+            <div class="span3">
+              <%= image_tag screencast.thumbnail, :class => "thumbimage" %>
+            </div>
+              <div class="span8">
+                <h3 style="margin-top: -10px;"><a href="<%= screencast_path(screencast) %>"><%= screencast.title %>  </a></h3>
+                <p> <%= screencast.body %> </p>
+              </div>
+        </div>
+    <% end %>
+
