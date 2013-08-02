@@ -10,7 +10,7 @@ development:
   host: localhost
   timeout: 5000
   username: root
-  password: hetalksinme2
+  password:
 
 
 # Warning: The database defined as "test" will be erased and
@@ -30,4 +30,4 @@ production:
   host: localhost
   username: root
   password: YOUR_PASSWORD_HERE
-  socket: hetalksinme2
+  socket:

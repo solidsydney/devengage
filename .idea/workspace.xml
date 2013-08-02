@@ -52,10 +52,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="80" selection-start="592" selection-end="592" vertical-scroll-proportion="0.6862745">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="69" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.66086954">
+            <state line="99" column="69" selection-start="3974" selection-end="3974" vertical-scroll-proportion="-15.833333">
               <folding>
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#p#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -87,7 +96,6 @@
         <option value="$PROJECT_DIR$/config/unicorn_init.sh" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/app/mailers/notify.rb" />
         <option value="$PROJECT_DIR$/log/development.log" />
@@ -95,6 +103,7 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/admin/users.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -854,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="56" selection-start="605" selection-end="605" vertical-scroll-proportion="0.6862745">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/screencasts.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="4" selection-start="395" selection-end="416" vertical-scroll-proportion="0.0">
@@ -891,11 +893,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="69" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.66086954">
+        <state line="99" column="69" selection-start="3974" selection-end="3974" vertical-scroll-proportion="-15.833333">
           <folding>
             <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#p#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="80" selection-start="592" selection-end="592" vertical-scroll-proportion="0.6862745">
+          <folding />
         </state>
       </provider>
     </entry>
