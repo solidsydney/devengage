@@ -3,13 +3,13 @@ Engaged::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
+      :enable_starttls_auto => true,
       :address => "smtp.gmail.com",
       :port => 587,
       :domain => "devengage.com",
       :authentication => "plain",
-      :enable_starttls_auto => true,
-      :user_name => ENV["solidsydney@gmail.com"],
-      :password => ENV["hetalksinme2"]
+      :user_name => ENV[""],
+      :password => ENV[""]
   }
   # Settings specified here will take precedence over those in config/application.rb
 

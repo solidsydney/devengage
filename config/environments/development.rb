@@ -8,8 +8,8 @@ Engaged::Application.configure do
       :domain => "devengage.com",
       :authentication => "plain",
       :enable_starttls_auto => true,
-      :user_name => ENV["solidsydney@gmail.com"],
-      :password => ENV["hetalksinme2"]
+      :user_name => ENV[""],
+      :password => ENV[""]
   }
   # Settings specified here will take precedence over those in config/application.rb
 
