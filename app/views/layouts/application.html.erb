@@ -76,17 +76,18 @@
 
 
 <!-- Modal for header picture -->
+<% if user_signed_in? %>
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel"><%= current_user.name + " " + current_user.surname if user_signed_in? %></h3>
+    <h3 id="myModalLabel"><%= current_user.name + " " + current_user.surname %></h3>
   </div>
   <div class="modal-body">
     <a href="<%= edit_user_registration_path(current_user) %>" class="btn btn-info"><i class="icon-edit"></i> Edit Profile </a>
     <a href="<%= user_path(current_user) %>" class="btn btn-info"><i class="icon-print"></i> Print Receipt </a>
     <p><span style="color: darkred; font-size: 14px; font-weight: bold;">Remember your mission: </span> <br />
       <span style="font-weight: bolder; font-size: 15px;"><%= current_user.mission %></span> <br />
-      <span style="font-size:  14px; font-weight: bold; color: darkblue; ">Are you working toward achieving it?</span></p>
+      <span style="font-size:  14px; font-weight: bold; color: darkblue; ">Are you working towards achieving it?</span></p>
   </div>
   <div class="modal-footer">
 
@@ -94,7 +95,7 @@
     <%= link_to "Sign Out", destroy_user_session_path, :method => "delete" %>
   </div>
 </div>
-
+ <% end %>
 
 
 <hr>

@@ -1,4 +1,16 @@
 Engaged::Application.configure do
+  config.action_mailer.default_url_options = { :host => "devengage.com" }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address => "smtp.gmail.com",
+      :port => 587,
+      :domain => "devengage.com",
+      :authentication => "plain",
+      :enable_starttls_auto => true,
+      :user_name => ENV["solidsydney@gmail.com"],
+      :password => ENV["hetalksinme2"]
+  }
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -36,14 +48,4 @@ Engaged::Application.configure do
   config.assets.debug = true
 
   config.active_support.deprecation = :notify
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      :address  => "smtp.gmail.com",
-      :port  => 25,
-      :user_name  => "rzaartz@gmail.com",
-      :password  => "roseline",
-      :authentication  => :login,
-      :enable_starttls_auto => false
-  }
-  config.action_mailer.default_url_options = { :host => 'localhost:3000'}
 end

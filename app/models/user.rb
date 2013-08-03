@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
                     :url => "/system/:attachment/:id/:style/:normalized_photos_file_name"
   validates_attachment_content_type :photos, :content_type => ['image/jpeg', 'image/png', 'image/gif']
   validates_attachment_presence :photos
-  # after_create :notify_user
+  after_create :notify_user
 
   Paperclip.interpolates :normalized_photos_file_name do |attachment, style|
     attachment.instance.normalized_photos_file_name
@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
   end
 
   def notify_user
-    Notify.send_email(self).deliver
+   Notify.send_email(self).deliver
   end
 
 
